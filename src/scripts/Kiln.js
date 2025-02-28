@@ -1,14 +1,11 @@
 export const firePottery = (piece, temp) => {
-    const kiln = {
-        piece: piece,
-        temp: temp,
-        fired: true,
-        cracked: false
+    piece.fired = true
+
+    if (temp > 2200) {
+        piece.cracked = true
+    } else {
+        piece.cracked = false;
     }
 
-    if (kiln.temp > 2200) {
-        kiln.cracked = true
-    }
-
-    return kiln;
+    return piece;
 }

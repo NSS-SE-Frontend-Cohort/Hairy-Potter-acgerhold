@@ -15,5 +15,6 @@ export const toSellOrNotToSell = (firedPiece) => {
 }
 
 export const usePottery = () => {
-    return structuredClone(inventory)
+    return inventory;
+    
 }

@@ -1,6 +1,7 @@
 // Imports go first
 import { firePottery } from './Kiln.js';
 import { toSellOrNotToSell } from './PotteryCatalog.js';
+import { potteryList } from './PotteryList.js';
 import { makePottery } from './PotteryWheel.js';
 
 
@@ -27,4 +28,13 @@ let finalVase = toSellOrNotToSell(firedVase)
 let finalGlass = toSellOrNotToSell(firedGlass)
 
 // Invoke the component function that renders the HTML list
+const inventoryHTML = potteryList();
 
+console.log(inventoryHTML);
+
+const potteryListElement = document.getElementById('potteryList');
+if (inventoryHTML) {
+    potteryListElement.innerHTML = inventoryHTML;
+} else {
+    console.error("IDK");
+}
