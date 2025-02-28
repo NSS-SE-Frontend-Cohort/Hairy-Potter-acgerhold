@@ -28,7 +28,7 @@ let finalVase = toSellOrNotToSell(firedVase)
 let finalGlass = toSellOrNotToSell(firedGlass)
 
 // Invoke the component function that renders the HTML list
-const inventoryHTML = potteryList();
+let inventoryHTML = PotteryList();
 
 console.log(inventoryHTML);
 

@@ -120,12 +120,12 @@ In the `main.js` module, invoke the `PotteryList` component function. Take its r
 > 🧨 Before you click the "Assessment Complete" button on the Learning Platform, add your answers below for each question and make a commit. It is your option to request a face-to-face meeting with a coach for a vocabulary review.
 
 1. Explain how you got the HTML, with the correct data, displayed in the browser?
-   > Your answer here
+   > I was able to display the HTML into the browser by creating a section named "potteryList" in index.html that would later be injected with the HTML generated from my JS functions. I iterate through each pottery object and dynamically encode the object's attributes into the HTML using references like ${pottery.price}. Each pottery piece will have an identical HTML representation in the browser using this method.
 2. In the **PotteryList** module, when you iterate your pottery, you need to show the evidence of what the **weight** property's value is for the 2nd piece of pottery. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > Paste your video's public URL here
+   > [Paste your video's public URL here](https://www.loom.com/share/c836d70ee56346aebf26725838258387?sid=15e2ff5d-a295-4326-9b31-644028486623)
 3. The **PotteryWheel** module has a single function named `makePottery`. Why doesn't that module have all of the other code in it?
-   > Your answer here
+   > I think its to keep things modular and organized. PotteryWheel creates the initial pottery object, where then it is passed to Kiln and the object is modified. Finally it gets to PotteryCatalog where it is decided if the piece will be sold or not. Separation of logic.
 4. The pottery shop has learned that there is a set of customers that are willing to buy cracked pottery at a discounted price of $2.50. That means that the cracked pottery should now be displayed in the catalog. Explain the changes that this new business strategy would cause to your algorithm.
-   > Your answer here
+   > I would have to modify the logic in PotteryCatolog.js. Cracked pieces of pottery are fully excluded from the catalog when passed through. I would need different logic in that method for cracked and non-cracked pottery pieces.
 5. In the **Kiln** module, you have a `firePottery()` function. You need to demonstrate how to use the debugger to verify the values of the parameters for that function when your code runs. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > Paste your video's public URL here
+   > [Paste your video's public URL here](https://www.loom.com/share/f32ef5d370bf44a196ad20cb047e933d?sid=86328dd0-4368-4ac6-b862-38306af920f8)
