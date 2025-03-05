@@ -7,7 +7,7 @@ export const toSellOrNotToSell = (firedPiece) => {
         } else {
             firedPiece.price = 20
         }
-
+        
         inventory.push(firedPiece)
     }
     
